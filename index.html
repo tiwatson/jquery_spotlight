@@ -1,0 +1,87 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+	<title>Spotlight Example</title>
+
+	<script type="text/javascript" charset="utf-8" src='http://ajax.googleapis.com/ajax/libs/jquery/1.2.6/jquery.min.js'></script>
+  <script type="text/javascript" charset="utf-8" src='spotlight.js'></script>
+  <script type="text/javascript" charset="utf-8">
+    $(function() {
+      $('#spotlight_1').spotlight({displayTime: 1});
+      $('#spotlight_2').spotlight({displayTime: 3});
+    });
+  </script>
+
+  <style type="text/css" media="screen">
+    #spotlight { width: 40em; }
+    .spotlight_feature { width: 20em; border: solid 1px #ccc; margin-left: 10em; padding: 0.5em; height: 6.5em; }
+    .featured_content { display: none; }
+    ul { float: left; width: 10em; border: solid 1px #ccc; border-right-style: none; }
+    ul, li { padding: 0; margin: 0; list-style: none; }
+    li { line-height: 1.5; width: 9em; padding: 0 0.5em; }
+    li:hover, li.on { background: #ccc; }
+  </style>
+</head>
+
+<body>
+
+  <div id='spotlight_1' class='spotlight'>
+    <ul id='spotlight_items'>
+      <li class='spotlight_item'>
+        Spotlight 1 Item 1
+        <div class='featured_content'>Spotlight 1 Item 1 Feature</div>
+      </li>
+      <li class='spotlight_item'>
+        Spotlight 1 Item 2
+        <div class='featured_content'>Spotlight 1 Item 2 Feature</div>
+      </li>
+      <li class='spotlight_item'>
+        Spotlight 1 Item 3
+        <div class='featured_content'>Spotlight 1 Item 3 Feature</div>
+      </li>
+      <li class='spotlight_item'>
+        Spotlight 1 Item 4
+        <div class='featured_content'>Spotlight 1 Item 4 Feature</div>
+      </li>
+      <li class='spotlight_item'>
+        Spotlight 1 Item 5
+        <div class='featured_content'>Spotlight 1 Item 5 Feature</div>
+      </li>
+    </ul>
+    <div class='spotlight_feature'></div>
+  </div>
+  <br />
+  <br />
+  <br />
+  <div id='spotlight_2' class='spotlight'>
+    <ul id='spotlight_items'>
+      <li class='spotlight_item'>
+        Spotlight 2 Item 1
+        <div class='featured_content'>Spotlight 2 Item 1 Feature</div>
+      </li>
+      <li class='spotlight_item'>
+        Spotlight 2 Item 2
+        <div class='featured_content'>Spotlight 2 Item 2 Feature</div>
+      </li>
+      <li class='spotlight_item'>
+        Spotlight 2 Item 3
+        <div class='featured_content'>Spotlight 2 Item 3 Feature</div>
+      </li>
+      <li class='spotlight_item'>
+        Spotlight 2 Item 4
+        <div class='featured_content'>Spotlight 2 Item 4 Feature</div>
+      </li>
+      <li class='spotlight_item'>
+        Spotlight 2 Item 5
+        <div class='featured_content'>Spotlight 2 Item 5 Feature</div>
+      </li>
+    </ul>
+    <div class='spotlight_feature'></div>
+  </div>
+
+</body>
+</html>
