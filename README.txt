@@ -1,8 +1,7 @@
 jQuery Spotlight Plugin
 =======================
 
-This is a plugin that allows the creation of a spotlighted content module. An example of this in
-production would be the front page of the Fandango site: http://www.fandango.com.
+This is a plugin that allows the creation of a spotlighted content module. An example of this in production would be the front page of the Fandango site: http://www.fandango.com.
 
 You can also see an example here: http://examples.squishtech.com/jquery_spotlight
 
