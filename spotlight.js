@@ -32,11 +32,12 @@
 
       this.features
         .each(function(idx) {
-          this.idx = idx;
-          this.featured = $(this).find(self.settings.itemContent).remove().html();
+          var featured = $(this);
+          featured.data('idx', idx);
+          featured.data('featured', featured.find(self.settings.itemContent).remove().html());
         })
         .hover(
-          function() { self.show(this.idx); },
+          function() { self.show($(this).data('idx')); },
           function() { if (self.settings.autoReStart) self.start(); }
         );
 
@@ -62,7 +63,7 @@
       this.showing.addClass(this.settings.featuredClass);
 
       if (this.featureContainer)
-        this.featureContainer.html(this.showing[0].featured);
+        this.featureContainer.html(this.showing.data('featured'));
     },
 
     start: function() {
