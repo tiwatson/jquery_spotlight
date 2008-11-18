@@ -41,6 +41,12 @@
           function() { if (self.settings.autoReStart) self.start(); }
         );
 
+      this.featureContainer
+        .hover(
+          function() { self.stop(); },
+          function() { if (self.settings.autoReStart) self.start(); }
+        );
+
       this.show(0);
       this.start();
     }
